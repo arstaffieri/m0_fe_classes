@@ -85,3 +85,29 @@ console.log(eats1);
 //  it should have an isAdult property (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 //  it should have an isOld property that defaults to false. once a Hobbit is 101, it is old.
 //  it should have a hasRing property. If the Hobbit's name is "Frodo", true, if not, false.
+class Hobbit{
+  constructor(name, disposition){
+    this.name = name;
+    this.disposition = disposition;
+    this.age = 0;
+    this.isAdult = false;
+    this.isOld = false;
+    this.hasRing = false
+  }
+}
+if(name = "Frodo"){
+  hasRing = true;}
+  else hasRing = false;
+
+  if(this.age >= 33){
+    isAdult = true;
+  }
+  if (this.age >= 101){
+    isOld = true;
+  }
+celebrateBirthday(happy){
+  this.age + 1 === newAge;
+  }
+
+var happy1 = new newAge;
+console.log(happy1);
