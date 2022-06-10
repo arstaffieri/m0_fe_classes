@@ -2,8 +2,20 @@
 // it should have a dynamic name property
 // it should have a color property, that is silver by default
 // it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
+class Unicorn {
+  constructor (animal){
+    this.name = "name"
+    this.color = "silver";
+  }
+  changeName(newName){
+    this.name = newName;
+  }
+}
+ var horse1 = new Unicorn ("Percy")
+ console.log(horse1)
 
-
+ horse1.changeName("*~*This is a unicorn*~*");
+ console.log(horse1)
 
 // Write a class called Vampire
 // it should have a dynamic name property
@@ -11,6 +23,30 @@
 // it should have a thirsty property, that is true by default
 // it should have a drink method. When called, the thirsty property changes to false
 
+class Vampire{
+  constructor(name){
+    this.name = name;
+    this.pet = "bat";
+    this.thirst = true;
+  }
+  changeDrink(newDrink){
+    this.thirst = newDrink;
+  }
+  changeName(newName){
+    this.name = newName
+  }
+}
+var name1 = new Vampire ("Percy");
+console.log(name1)
+
+name1.changeName("Vlad");
+console.log(name1);
+
+var name2 = new Vampire ("Sam");
+console.log(name2);
+
+name2.changeDrink(false);
+console.log(name2);
 
 
 //  Write a Dragon class
@@ -20,7 +56,25 @@
 //  it should have a isHungry property that is true by default
 //  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
   // HINT: This requires you to use your knowledge from the conditionals lesson
+class Dragon{
+  constructor(){
+    this.name = "Temeraire";
+    this.rider = "Angie";
+    this.color = "Purple";
+    this.isHungry = true;
+  }
+  notHungry(eats){
+    this.isHungry = eats
+  }
+}
+var eats1 = new Dragon(true);
+console.log(eats1);
+console.log(eats1);
+console.log(eats1);
+console.log(eats1);
 
+eats1.notHungry(false);
+console.log(eats1);
 
 
 //  BIG CHALLNEGE: Write a Hobbit class
